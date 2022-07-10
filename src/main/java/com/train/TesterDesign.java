@@ -1,17 +1,18 @@
 package com.train;
 
 public class TesterDesign {
-        int OneWay;
+        int Total;
         int Return;
 
-        public TesterDesign(int OneWay, int Return) {
-            this.OneWay = OneWay;
+        public TesterDesign(int Total, int Return) {
+            this.Total = Total;
             this.Return = Return;
         }
 
         public void print() {
-            System.out.println("Total tickets: " + OneWay);
-            System.out.println("Round-trip: " + Return);
-            System.out.println("Total: $" + (int)((OneWay - Return)*1000 + Return*2000*0.9));
+            System.out.println("Total tickets: " + Total + "\n"
+                    + "Round-trip: " + Return + "\n"
+                    + "Total: $" + (int)((Total - Return)*1000 + Return*2000*0.9));
+
         }
 }
