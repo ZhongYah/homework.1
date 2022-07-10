@@ -12,6 +12,6 @@ public class TesterDesign {
         public void print() {
             System.out.println("Total tickets: " + OneWay);
             System.out.println("Round-trip: " + Return);
-            System.out.println("Total: $" + (int)((OneWay-Return)*1000 + Return*2000*0.9));
+            System.out.println("Total: $" + (int)((OneWay - Return)*1000 + Return*2000*0.9));
         }
 }
