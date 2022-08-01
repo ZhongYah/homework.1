@@ -3,14 +3,28 @@ package com.train
 import java.util.Scanner
 
 fun main(args: Array<String>) {
+    var  totalTickets = 0
+    while (totalTickets != -1) {
     val scanner = Scanner(System.`in`)
     print("Please enter number of tickets: ")
-    var totalTickets = scanner.nextInt()
-    print("How many round-trip tickets: ")
-    var roundTrip  = scanner.nextInt()
+     totalTickets = scanner.nextInt()
 
-    val kot = KotDesign(totalTickets, roundTrip );
-    kot.print()
+        if (totalTickets == -1 || totalTickets == 0) {
+            return
+        }
+
+        print("How many round-trip tickets: ")
+        var roundTrip = scanner.nextInt()
+
+        if(roundTrip > totalTickets){
+          println("Oops! Error!! Please enter correct number !!!")
+            continue
+        }
+
+        val kot = KotDesign(totalTickets, roundTrip);
+        kot.print()
+
+    }
 }
 
 class KotDesign (var totalTickets: Int, var roundTrip: Int){

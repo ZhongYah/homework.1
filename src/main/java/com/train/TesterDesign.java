@@ -15,4 +15,5 @@ public class TesterDesign {
                     + "Total: $" + (int)((Total - Return)*1000 + Return*2000*0.9));
 
         }
+
 }
