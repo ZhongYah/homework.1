@@ -20,7 +20,7 @@ public class Tester {
             int Return = scanner.nextInt();
 
             if (Return > Total){
-                System.out.println("Oops! Error!! Please enter correct number !!!");
+                System.out.println("Oops! Error!! Please enter correct number !!!" + "\n");
                 continue;
             }
             TesterDesign test = new TesterDesign(Total, Return);

@@ -12,7 +12,7 @@ public class TesterDesign {
         public void print() {
             System.out.println("Total tickets: " + Total + "\n"
                     + "Round-trip: " + Return + "\n"
-                    + "Total: $" + (int)((Total - Return)*1000 + Return*2000*0.9));
+                    + "Total: $" + (int)((Total - Return)*1000 + Return*2000*0.9) + "\n");
 
         }
 

@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
         var roundTrip = scanner.nextInt()
 
         if(roundTrip > totalTickets){
-          println("Oops! Error!! Please enter correct number !!!")
+          println("Oops! Error!! Please enter correct number !!!" + "\n")
             continue
         }
 
@@ -32,7 +32,7 @@ class KotDesign (var totalTickets: Int, var roundTrip: Int){
     {
         println("Total tickets: $totalTickets" + "\n"
                 + "Round-trip: $roundTrip" + "\n"
-                + "Total: $" + ((totalTickets - roundTrip)*1000 + roundTrip*2000*0.9).toInt())
+                + "Total: $ "+ ((totalTickets - roundTrip)*1000 + roundTrip*2000*0.9).toInt() + "\n")
 
     }
 }
