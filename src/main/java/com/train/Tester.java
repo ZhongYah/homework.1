@@ -10,7 +10,7 @@ public class Tester {
             Scanner scanner = new Scanner(System.in);
             Total = scanner.nextInt();
 
-            if (Total == -1 || Total == 0) {
+            if (Total == -1) {
                 return;
             }
 //        System.out.print("Please enter number of tickets: ");
@@ -19,7 +19,7 @@ public class Tester {
             System.out.print("How many round-trip tickets: ");
             int Return = scanner.nextInt();
 
-            if (Return > Total){
+            if (Return > Total || Total == 0){
                 System.out.println("Oops! Error!! Please enter correct number !!!" + "\n");
                 continue;
             }

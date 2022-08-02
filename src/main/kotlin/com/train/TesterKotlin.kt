@@ -9,14 +9,14 @@ fun main(args: Array<String>) {
     print("Please enter number of tickets: ")
      totalTickets = scanner.nextInt()
 
-        if (totalTickets == -1 || totalTickets == 0) {
+        if (totalTickets == -1 ) {
             return
         }
 
         print("How many round-trip tickets: ")
         var roundTrip = scanner.nextInt()
 
-        if(roundTrip > totalTickets){
+        if(roundTrip > totalTickets || totalTickets == 0){
           println("Oops! Error!! Please enter correct number !!!" + "\n")
             continue
         }
